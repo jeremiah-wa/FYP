@@ -7,7 +7,7 @@
 - Preferably run notebook cell by cell. Some of the cells (validation, testing and recommendation generation, etc.) require extensive processing time.
 - The results will print on corresponding csv files
 
-The dataset used for the experiment (TripAdvisor.csv) was filtered from a SQL table (review.sql). I used the tripadvisor.sql to query the table and retrieve a Tripadvisor table which i then exported to csv. This is the dataset I used to conduct the experiments. 
+The dataset used for the experiment (TripAdvisor.csv) was filtered from a SQL table (review.sql). I used the tripadvisor.sql to query the table and retrieve a Tripadvisor table which I then exported to csv. This is the dataset I used to conduct the experiments. 
 
 
 ### TripAdvisor dataset
