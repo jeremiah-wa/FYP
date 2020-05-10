@@ -7,15 +7,20 @@
 - Preferably run notebook cell by cell. Some of the cells (validation, testing and recommendation generation, etc.) require extensive processing time.
 - The results will print on corresponding csv files
 
+The dataset used for the experiment (TripAdvisor.csv) was filtered from a SQL table (review.sql). I used the tripadvisor.sql to query the table and retrieve a Tripadvisor table which i then exported to csv. This is the dataset I used to conduct the experiments. 
+
+
 ### TripAdvisor dataset
 
-- create table (dataframe) from TripAdvisor dataset filtered from TripAdvisor SQL relational
+This cell creates table (dataframe) from TripAdvisor dataset filtered from TripAdvisor SQL relational
 
 ### Pre-processing
 
-- Removing duplicates: remove multiple reviews of a distinct hotel by one user.  
-- Ensure each user has rated at least 3 different hotels and each hotel has atleast 3 ratings
-- parsing html: removing tag and other syntax from review text
+After filtering the data from the SQL files. Some extra pre-processing was required. This involved the following:
+- **Removing duplicates:** remove multiple reviews of a distinct hotel by one user. This 
+- **parsing html:** removing tag and other syntax from review text
+
+I had not accounted for duplicate reviews in the original dataset. To account for the offset created when I removed the duplicates the minimum number of reviews per user and hotel had to be reset to 3. This was still a  sufficient number of reviews for the training, validation, test split.
 
 ### User-item Matrix
 
