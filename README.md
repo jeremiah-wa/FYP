@@ -16,10 +16,10 @@ This cell creates table (dataframe) from TripAdvisor dataset filtered from TripA
 ### Pre-processing
 
 After filtering the data from the SQL files. Some extra pre-processing was required. This involved the following:
-- **Removing duplicates:** remove multiple reviews of a distinct hotel by one user. This 
+- **Removing duplicates:** remove multiple reviews of a distinct hotel by one user 
 - **parsing html:** removing tag and other syntax from review text
 
-I had not accounted for duplicate reviews in the original dataset. To account for the offset created when I removed the duplicates the minimum number of reviews per user and hotel had to be reset to 3. This was still a  sufficient number of reviews for the training, validation, test split.
+I had not accounted for duplicate reviews in the when filtering the dataset. To correct for the offset created when I removed the duplicates the minimum number of reviews per user and hotel had to be reset to 3. This was still a sufficient number of reviews for the training, validation, test split.
 
 ### User-item Matrix
 
