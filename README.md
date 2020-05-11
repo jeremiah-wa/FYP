@@ -7,8 +7,7 @@
 - Preferably run notebook cell by cell. Some of the cells (validation, testing and recommendation generation, etc.) require extensive processing time.
 - The results will print on corresponding csv files
 
-The dataset used for the experiment (TripAdvisor.csv) was filtered from a SQL table (review.sql). I used the tripadvisor.sql to query the table and retrieve a Tripadvisor table which I then exported to csv. This is the dataset I used to conduct the experiments. 
-
+The dataset used for the experiment (TripAdvisor.csv) was filtered from a SQL table (review.sql). I used the tripadvisor.sql to query the table and retrieve a Tripadvisor table which I then exported to csv. The reviews.sql and tripadvisor.sql files can be found in the SQL.zip file.
 
 ### TripAdvisor dataset
 
@@ -183,6 +182,10 @@ Compare the highest performing algorithms from both CF and MC approaches. This c
 ## Content-based (CB)
 
 This cell contained the CB recommender object class.**It is necessary to run this cell to define the cb_recommender object.** This recommender object can be configured to perform all the CB approaches mentioned in Ch 8 of the report.
+
+Similarity between term vector is computed using the cosine similarity metric (note the vectors were normalized so cosine is given by the dot product of the vectors).
+
+In this dataset, it was found that similarity can be found for every vector pair so to reduce the time complexity of the algorithm, the number of neighbour profiles was fixed to 100.
 
 ## Recommendations
 
