@@ -133,7 +133,7 @@ similarly threshold testing is performed on a Item-based CF model
 
 #### print results to csv
 
-All results are then printed to a corresponding csv
+All results are then printed to a corresponding csv file.
 
 ###  Significance weighting
 
@@ -171,7 +171,7 @@ similarly threshold testing is performed on a Item-based CF model
 
 #### print results to csv
 
-All results are then printed to a corresponding csv
+All results are then printed to a corresponding csv file.
 
 ###  Significance weighting
 
