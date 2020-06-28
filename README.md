@@ -267,7 +267,7 @@ To compute diversity the similarity between the recommended items is needed, how
 ### Coverage
 
 **it is necessary to run this cell**
-(referenced 9.5.3 of thereport)
+(referenced 9.5.3 of the report)
 
 The Coverage of the recommendations is defined as proportion of user profiles in the truth set that a recommendation was generated i.e. number of users for which recommendations can be made / number of users in the truth set.
 
