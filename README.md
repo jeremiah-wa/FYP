@@ -1,4 +1,4 @@
-# FYP
+# Final Year Project
 ## Multi-criteria recommender
 
 #### How to:
