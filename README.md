@@ -1,5 +1,5 @@
-# Final Year Project
-## Multi-criteria recommender
+# Multi-criteria recommender
+In this project I investigate the effectiveness of multi-criteria ratings on recommendations.
 
 #### How to:
 - Download TripAdvisor.csv file and FYP notebook
